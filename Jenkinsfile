@@ -6,5 +6,10 @@ pipeline {
           echo "Pipeline for poll scm"
         }
       }
+      stage ('Hi') {
+        steps {
+          echo "task pipiline"
+        }
+      }
     }
 }
