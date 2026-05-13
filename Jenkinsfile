@@ -9,7 +9,7 @@ pipeline {
       stage ('Hi') {
         steps {
           echo "task pipiline"
-          cat file1
+          sh 'cat file1'
         }
       }
     }
