@@ -1,16 +1,20 @@
 pipeline {
-  agent any 
+    agent any 
     stages {
-      stage ('Hello') {
-        steps  {
-          echo "Pipeline for poll scm"
+        stage('Build') { 
+            steps {
+                echo "Build"
+            }
         }
-      }
-      stage ('Hi') {
-        steps {
-          echo "task pipiline"
-          sh 'cat file1'
+        stage('Test') { 
+            steps {
+                echo "Test"
+            }
         }
-      }
+        stage('Deploy') { 
+            steps {
+                echo "Deploy" 
+            }
+        }
     }
 }
